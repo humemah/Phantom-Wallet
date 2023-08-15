@@ -3,7 +3,7 @@ import { Connection, PublicKey, clusterApiUrl, Account } from "@solana/web3.js";
 
 
 export interface TokenBalanceInfo {
-  token: Token;
+  token: any;
   balance: number;
 }
 

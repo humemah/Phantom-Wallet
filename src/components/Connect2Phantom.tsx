@@ -93,12 +93,13 @@ const Connect2Phantom: FC = () => {
         <div>
           <h3>Token Balances:</h3>
           <ul>
-            {tokenBalances.map((balanceInfo, index: number) => (
-              <li key={index}>
-                Token Mint: {balanceInfo.token}, Balance: {balanceInfo.balance}
-              </li>
-            ))}
-          </ul>
+  {tokenBalances.map((balanceInfo, index: number) => (
+    <li key={index}>
+      Token Mint: {balanceInfo.token.toBase58()}, Balance: {balanceInfo.balance}
+    </li>
+  ))}
+</ul>
+
         </div>
       ) : null}
 
